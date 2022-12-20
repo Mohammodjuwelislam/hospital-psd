@@ -172,6 +172,25 @@ label {
 	text-decoration: none;
 }
 
+.s-btns{
+	display: inline-block;
+	text-align: center;
+    background: #ffce1c;
+    color: #111;
+    padding: 13px 35px;
+    font-size: 16px;
+    font-weight: 600;
+	transition: .3s;
+	border-radius: 30px;
+}
+
+.s-btns:hover{
+	background-color: #ff6f1c;
+	color: #fff;
+}
+
+
+
 .breadcrumb > .active {
 	color: #888;
 }
@@ -223,7 +242,48 @@ label {
 
 
 
+/* sectiion-title */
 
+.section-title h6 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffce1c;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.section-title h6::before{
+	position: absolute;
+	top: 11px;
+	left: 120%;
+	content: "";
+	width: 57px;
+	height: 3px;
+	background-color: #ffce1c;
+}
+
+.section-title h2{
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.section-title span{
+	letter-spacing: .6px;
+	text-transform: uppercase;
+	color: #999999;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+.section-title p{
+	font-size: 15px;
+	line-height: 26px;
+	color: #7e7e7e;
+}
 
 
 
@@ -641,7 +701,7 @@ label {
 
 .single-service-item {
 	padding: 60px 45px;
-	border: 2px solid aliceblue;
+	border: 4px solid #FFFFFF1A;
 }
 
 
@@ -656,6 +716,9 @@ label {
 	display: block;
 }
 
+.single-service-item:hover .service-header-content span{
+	color: #ffce1c;
+}
 
 .service-header-line-icon {
 	margin-bottom: 20px;
@@ -664,9 +727,131 @@ label {
 	font-size: 16px;
 	color: #fff;
 	margin-bottom: 30px;
+	transition: .3s;
 }
+
+.service-bottom-text:hover p{
+	color: #ffce1c;
+}
+
 .service-bottom-text a {
 	color: #fff;
 	text-transform: capitalize;
+	transition: .3s;
+}
+.service-bottom-text a:hover{
+	color: #ffce1c;
 }
 /* service-area-code-end */
+
+
+
+
+
+/* appointment-area-code-start */
+.appointment-content{
+	position: relative;
+}
+
+.appointment-content p {
+	position: absolute;
+	top: 28%;
+	left: 19px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.appointment-form input {
+	background: transparent;
+	color: #fff;
+	border: 0;
+	font-weight: 700;
+	font-size: 33px;
+}
+
+
+.appiontment-border-left {
+	margin-left: 120px;
+	position: relative;
+}
+
+.appiontment-border-left::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: -72px;
+	width: 2px;
+	height: 100%;
+	background-color: #FFFFFF1A;
+}
+
+.appointment-icon{position: relative;}
+.appointment-icon span {
+	position: absolute;
+	top: 50%;
+	left: -44px;
+	font-size: 18px;
+	color: #fff;
+}
+
+/* appointment-area-code-end */
+
+
+
+
+/* pulular-meal-code-start */
+.meal-text {
+	margin: 7px 13px;
+}
+.meal-text h5 a{
+	font-size: 28px;
+	color: #fff;
+	font-weight: 700;
+	transition: .3s;
+}
+
+.meal-text h5 a:hover{
+	color: #FFCE1C;
+}
+
+.meal-text p {
+	color: #fff;
+}
+
+.meal-btns{
+	position: relative;
+}
+
+.meal-btns span {
+	position: absolute;
+	bottom: 14px;
+	left: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+}
+
+
+.meal-banner-img img{
+	min-width: 100%;
+}
+/* pulular-meal-code-end */
+
+
+
+
+
+/* testimonial-css-start */
+.testimonial-wrapper {
+	padding: 40px 30px;
+	background: #222222;
+	margin: 15px 25px;
+	border-radius: 15px;
+	box-shadow: 3px 4px 15px #0000001a;
+}
+
+.testi-icon {
+	margin-bottom: 20px;
+}
+
+/* testimonial-css-end*/

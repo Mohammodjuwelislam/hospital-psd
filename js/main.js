@@ -82,6 +82,52 @@ function mainSlider() {
 mainSlider();
 
 
+// testimonial-active
+$('.testimonial-active').slick({
+	dots: false,
+	infinite: true,
+	arrows: true,
+	speed: 1000,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-right"></i></button>',
+	nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-left"></i></button>',
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
+});
+
+
+
+
+
+
+// nice-select
+$('select').niceSelect();
+
+
 // owlCarousel
 $('.owl-carousel').owlCarousel({
     loop:true,
